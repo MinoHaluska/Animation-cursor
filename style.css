@@ -43,7 +43,6 @@ body{
 
 .nav-links, 
 h1{
-    /* rozdelenie navigacie na polky, v jednej polke about zou a v druhej linky */
     flex: 1;
 }
 
