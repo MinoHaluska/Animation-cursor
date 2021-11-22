@@ -1,0 +1,61 @@
+@media (max-width: 810px) {
+    .navigation nav{
+        flex-direction: column;
+    }
+
+    .navigation nav h1{
+        margin-top: 0.5em;
+    }
+
+    .section-brands ul {
+        width: 19%;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .nav-links li {
+        padding: 0.4rem;
+    }
+
+    .sc-brand3{
+        display: none;
+    }
+
+    .section-brands ul {
+        width: 26%;
+    }
+
+}
+
+@media (max-width: 455px) {
+    .image-section{
+        display: flex;
+        flex-direction: column;
+        margin: 0.8em 0;
+    }
+
+    .front-cover{
+        width: 75%;
+    }
+
+    .none{
+        display: none;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+    }
+
+    .sc-brand2{
+        display: none;
+    }
+
+    .section-brands ul {
+        width: 42%;
+    }
+
+}
+
+
+

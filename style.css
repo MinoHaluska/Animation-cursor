@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+*{
+    outline: 1px solid black;
+}
+/* General */
+
+body{
+    width: 100%;
+    font-family: sans-serif;
+    cursor: none;
+}
+
+.navigation{
+    /* shadov pasik pod navigaciou */
+    box-shadow: 0 3px 25px black;
+    /*background: #fff;*/
+}
+
+.navigation nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li{
+    padding: 1rem;
+}
+
+
+.nav-links, 
+h1{
+    /* rozdelenie navigacie na polky, v jednej polke about zou a v druhej linky */
+    flex: 1;
+}
+
+.cursor{
+    /* stylujeme kruzok, ten prazdny div */
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    /* umiestnenie kruzku na stred kurzora */
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+
+    transition: all 0.3s ease;
+    /*sprestnujeme nacom sa ma robit transition*/
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+
+    z-index: -1;
+    /* filter na obrazku */
+    backdrop-filter: grayscale();
+}
+
+.link-grow{
+    /* ked som nad linkom zvacsenie o 2x */
+    transform: scale(2);
+    background: rgba(0, 0, 0, 1);
+}
+
+.scale{
+    /* ked som nad obr zvacsenie o 4x */
+    transform: scale(4);
+    z-index: 2;
+}
+
+.hovered-link{
+    color: #fff;
+}
+
+
+/* Image section ***********************************/
+
+.image-section{
+    margin: 2.5em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.front-cover{
+    position: relative;
+    z-index: 1;
+    width: 28%;
+    border: 5px solid #fff;
+    box-shadow: 2px 2px 10px #000;
+}
+
+/* footer ***********************/
+
+footer{
+    background: crimson;
+    min-height: 300px;
+    color: #fff;
+    cursor: default;
+}
+
+footer h3{
+    width: 90%;
+    margin: auto;
+    padding: 1em;
+    letter-spacing: 10px;
+    font-size: 1.6em;
+    font-weight: normal;
+}
+
+.section-brands{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.section-brands ul{
+    width: 15%;
+}
+
+.section-brands li{
+    list-style: none;
+    padding: 1em 0;
+}
+
+.section-brands li:hover{
+    cursor: pointer;
+}
+
+
